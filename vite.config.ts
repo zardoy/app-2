@@ -1,6 +1,6 @@
 import { defineVitConfig } from '@zardoy/vit'
-import reactJsx from 'vite-react-jsx'
+import react from '@vitejs/plugin-react'
 
 export default defineVitConfig({
-    plugins: [reactJsx()],
+    plugins: [react()],
 })
