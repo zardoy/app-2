@@ -1,9 +1,4 @@
 {
     "extends": "zardoy/src/react",
-    "plugins": ["eslint-plugin-react", "eslint-plugin-react-hooks"],
-    "rules": {
-        // TODO just forbid snake_case usage in shared config
-        "@typescript-eslint/naming-convention": "off",
-        "react/react-in-jsx-scope": "off"
-    }
+    "plugins": ["eslint-plugin-react", "eslint-plugin-react-hooks"]
 }

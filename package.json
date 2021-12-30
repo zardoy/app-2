@@ -1,6 +1,5 @@
 {
-    "name": "app-2",
-    "displayName": "Demo App 2",
+    "name": "sample-form",
     "version": "0.0.0",
     "private": true,
     "license": "MIT",
@@ -12,28 +11,28 @@
         "lint": "eslint src/**"
     },
     "devDependencies": {
-        "@types/react": "^17.0.37",
+        "@types/react": "^17.0.38",
         "@types/react-dom": "^17.0.11",
         "@zardoy/react-util": "^0.1.1",
         "@zardoy/tsconfig": "^1.2.2",
         "eslint": "^8.5.0",
-        "eslint-config-zardoy": "^0.2.2",
+        "eslint-config-zardoy": "^0.2.3",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
-        "typescript": "^4.5.2"
+        "typescript": "^4.5.4"
     },
     "dependencies": {
         "@vitejs/plugin-react": "^1.1.3",
-        "@zardoy/vit": "^0.0.1",
-        "cypress": "^9.1.1",
+        "@zardoy/vit": "^0.1.0",
+        "cypress": "^9.2.0",
         "cypress-esbuild-preprocessor": "^1.0.2",
-        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-react": "^7.28.0",
         "eslint-plugin-react-hooks": "^4.3.0",
         "start-server-and-test": "^1.14.0",
-        "tailwindcss": "^3.0.7",
+        "tailwindcss": "^3.0.8",
         "type-fest": "^2.8.0",
-        "vite": "^2.6.14",
-        "windicss": "^3.4.0"
+        "vite": "^2.7.10",
+        "windicss": "^3.4.2"
     },
     "prettier": {
         "semi": false,
