@@ -16,7 +16,7 @@
         "@zardoy/react-util": "^0.1.1",
         "@zardoy/tsconfig": "^1.2.2",
         "eslint": "^8.5.0",
-        "eslint-config-zardoy": "^0.2.3",
+        "eslint-config-zardoy": "^0.2.4",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "typescript": "^4.5.4"
