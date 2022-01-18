@@ -1,4 +1,4 @@
 {
-    "extends": "zardoy/src/react",
+    "extends": "zardoy/react",
     "plugins": ["eslint-plugin-react", "eslint-plugin-react-hooks"]
 }

@@ -1,5 +1,5 @@
 import { renderToDom } from '@zardoy/react-util'
 import App from './App'
-import 'virtual:windi.css'
+import 'tailwindcss/tailwind.css'
 
 renderToDom(<App />)

@@ -1,1 +1,1 @@
-// only for IDE intellisense
+module.exports = require('@zardoy/vit').defineTailwindConfig()
