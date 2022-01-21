@@ -1,7 +1,5 @@
 {
     "extends": "@zardoy/tsconfig/react",
-    "compilerOptions": {
-        "jsx": "react-jsx"
-    },
+    "compilerOptions": {},
     "include": ["src"]
 }
