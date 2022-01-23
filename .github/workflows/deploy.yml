@@ -27,8 +27,8 @@ jobs:
             args: [--frozen-lockfile, --strict-peer-dependencies]
       - run: pnpm tsc
       - run: pnpm lint
-      - run: pnpm test:e2e
       - run: pnpm build
+      - run: pnpm test:e2e-prod
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
