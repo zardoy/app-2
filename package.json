@@ -5,8 +5,8 @@
     "license": "MIT",
     "scripts": {
         "start": "vite --host",
-        "test:e2e-dev": "start-server-and-test start http-get://localhost:3000 test:cypress",
-        "test:e2e-prod": "start-server-and-test \"vite preview\" http-get://localhost:5000 test:cypress",
+        "test:e2e": "CYPRESS_BASE_URL=http://localhost:3000 start-test http-get://localhost:3000 test:cypress",
+        "ci": "pnpm build && CYPRESS_BASE_URL=http://localhost:5000 start-test \"vite preview\" http-get://localhost:5000 test:cypress",
         "test:cypress": "cypress run",
         "build": "vite build",
         "lint": "eslint src/**"

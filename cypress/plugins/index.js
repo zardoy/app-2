@@ -1,6 +1,11 @@
 const { cypressEsbuildPreprocessor } = require('cypress-esbuild-preprocessor')
-const path = require('path')
 
-module.exports = (on, config) => {
+module.exports = on => {
     on('file:preprocessor', cypressEsbuildPreprocessor())
+    on('task', {
+        log(message) {
+            console.log(message)
+            return null
+        },
+    })
 }
