@@ -3,27 +3,9 @@ import React, { useState } from 'react'
 import tw, { theme, styled, css } from 'twin.macro'
 import LoginField from '../components/LoginField'
 
-const StyledCheckbox = styled.input`
-    ${tw`my-3`}
-    accent-color: var(--color-primary);
-`
-
 type VariantProp = {
     variant: 'purple' | 'yellow'
 }
-
-// #region FORM COMPONENTS
-const LogoText = styled.h2(() => [tw`mb-4 text-4xl text-center text-secondary`])
-
-const LoginButton = styled.button<VariantProp>(({ variant }) => [
-    tw`active:scale-95 transform-gpu px-3 py-2 text-white transition transform scale-100 bg-primary`,
-    css`
-        :hover {
-            background-color: ${themeColor[variant].bgHover};
-        }
-    `,
-])
-// #endregion
 
 const themeColor = {
     purple: {
@@ -44,6 +26,24 @@ const formBg = {
     purple: tw`bg-purple-50`,
     yellow: tw`bg-yellow-50`,
 }
+
+// #region FORM COMPONENTS
+const StyledCheckbox = styled.input`
+    ${tw`my-3`}
+    accent-color: var(--color-primary);
+`
+
+const LogoText = styled.h2(() => [tw`mb-4 text-4xl text-center text-secondary`])
+
+const LoginButton = styled.button<VariantProp>(({ variant }) => [
+    tw`active:scale-95 transform-gpu px-3 py-2 text-white transition transform scale-100 bg-primary`,
+    css`
+        :hover {
+            background-color: ${themeColor[variant].bgHover};
+        }
+    `,
+])
+// #endregion
 
 const Login: React.FC<VariantProp> = ({ variant }) => {
     const [email, setEmail] = useState('')

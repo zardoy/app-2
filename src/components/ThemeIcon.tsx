@@ -11,7 +11,7 @@ interface ComponentProps extends React.ComponentProps<'svg'> {
 
 const ThemeIcon: React.FC<ComponentProps> = ({ icon: iconProp, active, ...props }) => {
     const icon = iconProp === 'moon' ? mdiMoonWaningCrescent : mdiWhiteBalanceSunny
-    return <Icon icon={icon} css={[tw`w-[48px] h-[48px]`, !active && tw`opacity-50 cursor-pointer`]} {...(props as any)} />
+    return <Icon icon={icon} css={[tw`w-[48px] h-[48px] transition-opacity`, !active && tw`opacity-50 cursor-pointer`]} {...(props as any)} />
 }
 
 export default ThemeIcon

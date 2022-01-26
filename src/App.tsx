@@ -7,7 +7,7 @@ const App: React.FC = () => {
 
     return (
         <>
-            <div tw="top-0 right-0 absolute flex">
+            <div tw="top-0 right-0 absolute flex m-2">
                 <ThemeIcon icon="moon" active={variant === 'purple'} tw="text-indigo-600" onClick={() => setVariant('purple')} />
                 <ThemeIcon icon="sun" active={variant === 'yellow'} tw="text-yellow-400" onClick={() => setVariant('yellow')} />
             </div>
