@@ -4,9 +4,10 @@ import { css, theme } from 'twin.macro'
 
 interface ComponentProps extends SetRequired<React.ComponentProps<'input'>, 'value' | 'onChange'> {
     label: string
+    isCollapsed?: boolean
 }
 
-const LoginField: React.FC<ComponentProps> = ({ label, children, ...inputProps }) => (
+const LoginField: React.FC<ComponentProps> = ({ label, children, isCollapsed = false, ...inputProps }) => (
     <label>
         <span tw="dark:text-white w-full text-sm text">{label}</span>
         <input
