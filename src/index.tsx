@@ -1,3 +1,4 @@
+/// <reference types="vitest/globals" />
 /// <reference types="@zardoy/vit/twin-sc" />
 import { renderToDom } from '@zardoy/react-util'
 import App from './App'
