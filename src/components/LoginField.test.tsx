@@ -8,12 +8,12 @@ it('basic', () => {
     expect(component.toJSON()).toMatchInlineSnapshot(raw`
       <label>
         <span
-          className="LoginField___StyledSpan-sc-1ktbcqn-0 hanQrF"
+          className="LoginField___StyledSpan-sc-1ktbcqn-0 jjskTX"
         >
           login
         </span>
         <input
-          className="LoginField___StyledInput-sc-1ktbcqn-1 crNECz"
+          className="LoginField___StyledInput-sc-1ktbcqn-1 feMISF"
           onChange={[Function]}
           value=""
         />
@@ -26,7 +26,7 @@ it('collapsed', () => {
     expect(component.toJSON()).toMatchInlineSnapshot(raw`
       <label>
         <span
-          className="LoginField___StyledSpan-sc-1ktbcqn-0 hanQrF"
+          className="LoginField___StyledSpan-sc-1ktbcqn-0 jjskTX"
         >
           login
         </span>
